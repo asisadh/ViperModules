@@ -98,6 +98,13 @@ class LoginViewTests: XCTestCase {
         let alertText = app.alerts.element.staticTexts["Username and password do not match."]
         self.waitForElementToAppear(element: alertText)
     }
+    
+    func test_didOpenSignUpPage_onPressedSignUpButton(){
+        let elementsQuery = XCUIApplication().scrollViews.otherElements
+        elementsQuery.staticTexts["Don’t have an account? Sign up"].tap()
+        
+        XCTAssert(elementsQuery.staticTexts["Sign Up"].exists)
+    }
 
     private func waitForElementToAppear(element: XCUIElement, timeout: TimeInterval = 10,  file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "exists == true")

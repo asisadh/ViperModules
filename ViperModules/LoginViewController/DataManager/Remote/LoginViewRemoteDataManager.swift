@@ -20,7 +20,7 @@ class LoginViewRemoteDataManager: LoginViewRemoteDataManagerInputProtocol{
                 status{
                 if let token = data.data?.token,
                     let user = data.data?.user{
-                    self.remoteRequestHandler?.onSucessfulLogin(token: "someToken", user: user)
+                    self.remoteRequestHandler?.onSucessfulLogin(token: token, user: user)
                 }
             }else{
                 self.remoteRequestHandler?.onError(message: "Username and password do not match.")

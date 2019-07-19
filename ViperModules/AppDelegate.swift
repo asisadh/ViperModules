@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if LoginViewInteractor.isUserAlreadyLoggedIn() {
             //            window?.rootViewController = HomeViewWireFrame.createHomeViewModule()
+            window?.rootViewController = LoginViewWireFrame.createLoginViewModule()
         }else{
             window?.rootViewController = LoginViewWireFrame.createLoginViewModule()
         }

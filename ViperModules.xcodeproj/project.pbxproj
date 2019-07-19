@@ -64,6 +64,7 @@
 		6B7846BD22E082F900058B60 /* LoginViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B78468B22E082F900058B60 /* LoginViewInteractor.swift */; };
 		6B7846C022E0844300058B60 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7846BF22E0844300058B60 /* LoginViewTests.swift */; };
 		6B7846C622E08F3D00058B60 /* LoginViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7846C522E08F3D00058B60 /* LoginViewInteractorTests.swift */; };
+		6BF8427A22E188E000E69B11 /* LoginViewLocalDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF8427922E188E000E69B11 /* LoginViewLocalDataManagerTests.swift */; };
 		7660D64B4EFBC2335F63DA6C /* libPods-ViperModulesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE7C577CB6D7A6212E47EA /* libPods-ViperModulesUITests.a */; };
 		9275E7716CC7471634A2F7CE /* libPods-ViperModules.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F667A8F8B35DBD1BF4361015 /* libPods-ViperModules.a */; };
 /* End PBXBuildFile section */
@@ -150,6 +151,7 @@
 		6B78468B22E082F900058B60 /* LoginViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewInteractor.swift; sourceTree = "<group>"; };
 		6B7846BF22E0844300058B60 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
 		6B7846C522E08F3D00058B60 /* LoginViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewInteractorTests.swift; sourceTree = "<group>"; };
+		6BF8427922E188E000E69B11 /* LoginViewLocalDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewLocalDataManagerTests.swift; sourceTree = "<group>"; };
 		77FBBCCD899405AB671E5EC0 /* Pods-ViperModules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperModules.release.xcconfig"; path = "Target Support Files/Pods-ViperModules/Pods-ViperModules.release.xcconfig"; sourceTree = "<group>"; };
 		84713123CF1AC2E6DF32EE00 /* Pods-ViperModulesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperModulesTests.debug.xcconfig"; path = "Target Support Files/Pods-ViperModulesTests/Pods-ViperModulesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		974BA7BDEFE360D6DF7681F2 /* Pods-ViperModulesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperModulesTests.release.xcconfig"; path = "Target Support Files/Pods-ViperModulesTests/Pods-ViperModulesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 		6B7846C322E08F1700058B60 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6BF8427622E188AF00E69B11 /* DataManager */,
 				6B7846C422E08F2000058B60 /* Interactor */,
 			);
 			path = LoginViewController;
@@ -519,6 +522,30 @@
 				6B7846C522E08F3D00058B60 /* LoginViewInteractorTests.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6BF8427622E188AF00E69B11 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				6BF8427822E188BE00E69B11 /* remote */,
+				6BF8427722E188B900E69B11 /* local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		6BF8427722E188B900E69B11 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				6BF8427922E188E000E69B11 /* LoginViewLocalDataManagerTests.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		6BF8427822E188BE00E69B11 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = remote;
 			sourceTree = "<group>";
 		};
 		A40F6E41A2A0900873CDF7A9 /* Frameworks */ = {
@@ -807,6 +834,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF8427A22E188E000E69B11 /* LoginViewLocalDataManagerTests.swift in Sources */,
 				6B7846C622E08F3D00058B60 /* LoginViewInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
